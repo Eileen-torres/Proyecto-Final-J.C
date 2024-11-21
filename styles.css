@@ -1,0 +1,53 @@
+. {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: 'poppins' ; sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.header {
+    background: linear-gradient(
+     rgba(29,30,35,0.8)
+     rgba(29,30,35,0.8)
+    );
+    (url(palomitas de colores 2.0.peg.jpeg)
+    background-position: top-center;
+    background-repeat: no-repeat;
+    backgrounn-size: cover;
+    display: flex 
+    align-items: center;
+    min-heigth:80vh;
+    padding: 80px 0 0 0;
+
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: darkmagenta;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+
+}
+    
