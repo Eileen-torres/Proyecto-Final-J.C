@@ -3,26 +3,60 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
 }
 
 body {
     display: flex;
-    justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    justify-content: center;
+    height: 100vh;
     background-image: url(fondo\ de\ registro\ y\ login.jpg);
+    background-size: cover;}
+
+    
+.container{
+       display: flex;
+       border-radius: 20px;
+       box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+       height: 500px;
+       max-width: 900px;
+       transition: all is ease;
+       margin: 10px;
+       align-items: center;
+       justify-content: center;
+       width: 40%;
+       text-align: center;
+       background-color: #f8f8f8;
+       border-top-left-radius: 20px;
+       border-bottom-left-radius: 20px;
+       padding: 0 30px;
+       cursor: pointer;
+   }
+
+..container h1 {
+    position: absolute;
+  top: 20px; /* Separación del borde superior */
+  left: 50%; /* Posición horizontal centrada */
+  transform: translateX(-50%); /* Centra el texto respecto a su propia mitad */
+  font-size: 2.5rem;
+  color: #333;
+   }
+
+   .container p{
+    color: #555;
+
 }
 
-.container {
-    width: 420px;
-    background-color: blueviolet;
-    color: #fff;
-}
-
-.container h1 {
-    font-size: 36 px;
+#formlogin {
+    margin: 30px 0 0 0;
+    width: 100%;
+    max-width: 450px;
+    padding: 100px 70px 80px;
     text-align: center;
 }
+
+
 
 
 
@@ -35,3 +69,54 @@ body {
     border-radius: 40px;
 
 }
+.input-box button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #1e90ff, #00bfff);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Hover: Cambia el color y eleva el botón */
+  .input-box button:hover {
+    background: linear-gradient(45deg, #00bfff, #1e90ff);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Efecto al hacer clic */
+  .input-box button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+@media (max-width: 480px) {
+    .container {
+      border-radius: 10px; /* Reduce el radio de los bordes */
+      box-shadow: none; /* Elimina la sombra para un diseño más limpio */
+    }
+  
+    .container h1 {
+      font-size: 1.5rem; /* Reduce aún más el tamaño del título */
+    }
+  
+    #formlogin {
+      padding: 30px 10px; /* Reduce aún más el relleno */
+    }
+  
+    .input-box input {
+      font-size: 0.8rem; /* Ajusta el tamaño del texto */
+    }
+  
+    .container p {
+      font-size: 0.9rem; /* Reduce el tamaño del texto descriptivo */
+    }
+  }

@@ -76,3 +76,27 @@
        position: relative;
        border-radius: 12px;
    }
+
+   @media (max-width: 480px) {
+    .container {
+      border-radius: 10px; /* Redondeado más pequeño */
+      box-shadow: none; /* Elimina la sombra para un diseño más simple */
+    }
+  
+    #register-form {
+      padding: 30px 10px;
+    }
+  
+    #register-form input {
+      font-size: 14px; /* Reduce el tamaño del texto */
+    }
+  
+    #register-form button {
+      font-size: 18px; /* Botón más pequeño */
+      padding: 10px;
+    }
+  
+    .container h1 {
+      font-size: 1.5rem;
+    }
+  }
