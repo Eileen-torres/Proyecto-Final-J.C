@@ -17,7 +17,8 @@ img {
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto; /* Márgenes superior e inferior de 20px, centrar horizontalmente */
+  width: 80%; 
 }
 
 .header {
@@ -25,7 +26,7 @@ img {
         rgba(29,30,35,0.8),
         rgba(29,30,35,0.8)
     ),
-    url()
+    url(palomitas\ de\ colores\ 2.0.peg.jpeg)
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,7 +48,7 @@ img {
 }
 
 .logo {
-    color: blueviolet;
+    color: #E7473C;
     font-size: 25px;
     font-weight: 800;
     text-transform: uppercase;
@@ -68,7 +69,7 @@ img {
 }
 
 .menu.navbar ul li a:hover {
-    color: blueviolet;
+    color: #E7473C;
 }
 
 #menu {
@@ -92,13 +93,17 @@ display: none;
 .header-txt h1 {
     font-size: 85px;
     line-height: 1;
-    color: #fff;
+    color: #E7473C;
     font-family: 'bebas neue', sans-serif;
+    margin-top: 30px; /* Margen superior */
+  margin-bottom: 10px; /* Margen inferior */
+  margin-left: 15px; /* Margen izquierdo */
+  margin-right: 15px; /* Margen derecho */
 }
 
 p {
     font 17px;
-color: #d4d4d4;
+color: #0c0b0b;
 margin-bottom: 35px;
 }
 
@@ -109,14 +114,14 @@ margin-bottom: 35px;
     text-transform: uppercase;
     background: linear-gradient(
         90deg,
-        rgba(245,99,72,1)0%,
+        #E7473C
         rgba (254,140,32,1) 100%
     );
 }
 
 .about {
     padding: 100px 0;
-    background-color: burlywood;
+    background-color: #ffdfb5;
 }
 
 .about-content {
@@ -132,7 +137,7 @@ margin-bottom: 35px;
 span {
     font-size: 14px;
     text-transform: uppercase;
-    color: burlywood;
+    color: #E7473C;
 }
 
 h2 {
@@ -143,7 +148,7 @@ h2 {
 }
 
 hr {
-    border: 1px solid burlywood;
+    border: 1px solid#ffdfb5;
     width: 10%;
     margin-bottom: 30px;
 }
@@ -398,3 +403,9 @@ flex-basis: 50%;
     }
 
 }
+
+@media (max-width: 768px) {
+    .container {
+      margin: 10px; /* Márgenes más pequeños en pantallas pequeñas */
+    }
+  }
