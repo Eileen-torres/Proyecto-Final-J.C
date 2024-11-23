@@ -12,7 +12,7 @@
        align-items: center;
        justify-content: center;
        height: 100vh;
-       background-image: url(fondo\ de\ registro\ 3.0.jpeg);
+       background-image: url(fondo\ de\ registro\ y\ login.jpg);
        background-size: cover;
    }
    .container{
@@ -35,8 +35,12 @@
    }
    
    .container h1 {
-    font-size: 36 px;
-    text-align: center;
+    position: absolute;
+  top: 20px; /* Separación del borde superior */
+  left: 50%; /* Posición horizontal centrada */
+  transform: translateX(-50%); /* Centra el texto respecto a su propia mitad */
+  font-size: 2.5rem;
+  color: #333;
    }
    
    .container p{
